@@ -342,7 +342,29 @@ header nav {
   }
 }
 
-    
+   
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.project-links a {
+  background: #263956;
+  color: #c9ddff;
+  padding: 10px 15px;
+  border: 1px solid #354967;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.project-links a:hover {
+  background: #354967;
+}
+ 
     
   </style>
 </head>
@@ -534,12 +556,14 @@ header nav {
 
         <h3>AI Bug Report Assistant</h3>
 
-        <p>
-          A planned software application that will help
-          programmers organize bug reports, identify
-          possible causes, and generate debugging
-          suggestions using artificial intelligence.
-        </p>
+       <p>
+        A web-based AI debugging assistant built using Python,
+        Streamlit, and Google's Gemini API. Users can describe
+        programming problems, select a programming language,
+        and receive AI-generated explanations, possible causes,
+        debugging steps, and suggested fixes.
+      </p>
+
 
         <div class="project-tags">
           <span>Artificial Intelligence</span>
@@ -547,9 +571,21 @@ header nav {
           <span>Debugging</span>
         </div>
 
-        <p class="project-note">
-          Development and documentation coming soon.
-        </p>
+        
+<div class="project-links">
+  <a href="https://mrammarhaf-ai-bug-assistant.streamlit.app/"
+     target="_blank"
+     rel="noopener noreferrer">
+    Live Demo
+  </a>
+
+  <a href="https://github.com/MrAmmarHaf/github-portfolio/tree/main/ai-assistant"
+     target="_blank"
+     rel="noopener noreferrer">
+    View Source Code
+  </a>
+</div>
+
       </div>
     </article>
 
