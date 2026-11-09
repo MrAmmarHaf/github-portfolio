@@ -92,6 +92,95 @@ header nav {
   gap: 28px;
   align-items: center;
 }
+
+
+.projects {
+  margin-top: 100px;
+  padding-top: 65px;
+  border-top: 1px solid #273347;
+}
+
+.projects h2 {
+  font-size: 38px;
+  margin-bottom: 12px;
+}
+
+.section-intro {
+  color: #b8c3d5;
+  font-size: 18px;
+  margin-bottom: 35px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(min(100%, 280px), 1fr)
+  );
+  gap: 24px;
+}
+
+.project-card {
+  background: #172237;
+  border: 1px solid #354967;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.project-image {
+  height: 175px;
+  background: #223450;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  color: #a9c9ff;
+  font-size: 15px;
+}
+
+.project-content {
+  padding: 24px;
+}
+
+.project-content h3 {
+  font-size: 23px;
+  margin: 10px 0;
+}
+
+.project-content > p {
+  color: #b8c3d5;
+}
+
+.project-type {
+  color: #86b6ff !important;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.project-tags span {
+  background: #263956;
+  color: #c9ddff;
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+}
+
+.project-note {
+  font-size: 13px;
+  margin-top: 20px;
+  color: #91a4bd !important;
+}
+
+
     
   </style>
 </head>
@@ -101,8 +190,12 @@ header nav {
     <strong>AH.</strong>
 <nav>
   <a href="#about">About Me</a>
-  <a href="https://github.com/MrAmmarHaf">GitHub Profile</a>
-</nav>  
+  <a href="#projects">Projects</a>
+  <a href="https://github.com/MrAmmarHaf">
+    GitHub Profile
+  </a>
+</nav>
+  
   </header>
 
   <main>
@@ -178,6 +271,118 @@ header nav {
     what I've built, explain the technical decisions behind
     my projects, and show how my skills are developing over time.
   </p>
+</section>
+
+<section class="projects" id="projects">
+  <h2>Featured Projects</h2>
+
+  <p class="section-intro">
+    Here are some of the personal and academic projects
+    I've worked on, along with an AI-assisted application
+    I'm planning to develop.
+  </p>
+
+  <div class="project-grid">
+
+    <!-- PERSONAL PROJECT -->
+    <article class="project-card">
+      <div class="project-image">
+        Gameplay screenshot coming soon
+      </div>
+
+      <div class="project-content">
+        <p class="project-type">
+          PERSONAL PROJECT · IN DEVELOPMENT
+        </p>
+
+        <h3>Unreal Engine Combat Prototype</h3>
+
+        <p>
+          A third-person combat project developed using Unreal
+          Engine 5 and C++. Features include character movement,
+          weapons, animation systems, and enemy artificial
+          intelligence with patrol, detection, and combat
+          behaviors.
+        </p>
+
+        <div class="project-tags">
+          <span>C++</span>
+          <span>Unreal Engine 5</span>
+          <span>Gameplay AI</span>
+        </div>
+
+        <p class="project-note">
+          Source code currently private.
+          Public showcase coming soon.
+        </p>
+      </div>
+    </article>
+
+    <!-- ACADEMIC PROJECT -->
+    <article class="project-card">
+      <div class="project-image">
+        Project screenshot coming soon
+      </div>
+
+      <div class="project-content">
+        <p class="project-type">
+          ACADEMIC PROJECT
+        </p>
+
+        <h3>Cache Simulator</h3>
+
+        <p>
+          A computer architecture programming project
+          focused on simulating cache memory behavior
+          and exploring how computer systems handle
+          memory accesses.
+        </p>
+
+        <div class="project-tags">
+          <span>Computer Architecture</span>
+          <span>Memory Systems</span>
+          <span>Simulation</span>
+        </div>
+
+        <p class="project-note">
+          Source code and screenshots to be added.
+        </p>
+      </div>
+    </article>
+
+    <!-- AI-ASSISTED PROJECT -->
+    <article class="project-card">
+      <div class="project-image">
+        AI project screenshot coming soon
+      </div>
+
+      <div class="project-content">
+        <p class="project-type">
+          AI-ASSISTED PROJECT · PLANNED
+        </p>
+
+        <h3>AI Bug Report Assistant</h3>
+
+        <p>
+          A planned software application that will help
+          programmers organize bug reports, identify
+          possible causes, and generate debugging
+          suggestions using artificial intelligence.
+        </p>
+
+        <div class="project-tags">
+          <span>Artificial Intelligence</span>
+          <span>Software Development</span>
+          <span>Debugging</span>
+        </div>
+
+        <p class="project-note">
+          Development and documentation coming soon.
+        </p>
+      </div>
+    </article>
+
+  </div>
 </section>
 
     
