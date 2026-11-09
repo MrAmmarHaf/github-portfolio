@@ -74,9 +74,14 @@ uncertain, explain what should be checked first.
                     "Please try again."
                 )
 
-        except Exception:
+       
+        except Exception as error:
             st.error(
-                "Unable to analyze the bug. "
-                "Check the Streamlit app logs, "
-                "Gemini API access, and usage limits."
+                "Gemini request failed. "
+                "Check the Streamlit application logs."
             )
+            print(
+                f"Gemini API error: {type(error).__name__}: {error}",
+                flush=True
+            )
+
