@@ -245,6 +245,46 @@ header nav {
 }
 
     
+.skills-section {
+  margin-top: 100px;
+  padding-top: 65px;
+  border-top: 1px solid #273347;
+}
+
+.skills-section h2 {
+  font-size: 38px;
+  margin-bottom: 12px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(min(100%, 280px), 1fr)
+  );
+  gap: 24px;
+}
+
+.skill-card {
+  background: #172237;
+  border: 1px solid #354967;
+  padding: 25px;
+  border-radius: 14px;
+}
+
+.skill-card h3 {
+  color: #86b6ff;
+  font-size: 21px;
+  margin-top: 0;
+}
+
+.skill-card p {
+  color: #b8c3d5;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+    
   </style>
 </head>
 
@@ -252,14 +292,17 @@ header nav {
   <header>
     <strong>AH.</strong>
 
+
 <nav>
   <a href="#about">About Me</a>
   <a href="#projects">Projects</a>
   <a href="#resume">Resume</a>
+  <a href="#skills">Skills</a>
   <a href="https://github.com/MrAmmarHaf">
     GitHub Profile
   </a>
 </nav>
+
 
   
   </header>
@@ -478,6 +521,56 @@ header nav {
       title="Ammar Hafez Professional Resume"
       loading="lazy">
     </iframe>
+  </div>
+</section>
+
+<section class="skills-section" id="skills">
+  <h2>Technical Skills</h2>
+
+  <p class="section-intro">
+    Technologies, development tools, and programming
+    concepts I've worked with through coursework
+    and personal projects.
+  </p>
+
+  <div class="skills-grid">
+
+    <div class="skill-card">
+      <h3>Programming</h3>
+      <p>
+        C++, Java, Python, Object-Oriented Programming,
+        HTML, CSS, Data Structures,
+        Algorithms
+      </p>
+    </div>
+
+    <div class="skill-card">
+      <h3>Game Development</h3>
+      <p>
+        Unreal Engine 5, Unity, Godot, 
+        Gameplay Programming, Animation Blueprints,
+        State Machines, Enemy AI
+      </p>
+    </div>
+
+    <div class="skill-card">
+      <h3>Systems & Development Tools</h3>
+      <p>
+        Windows, Visual Studio, Git,
+        GitHub, Debugging, Software Testing,
+        Computer Architecture
+      </p>
+    </div>
+
+    <div class="skill-card">
+      <h3>AI & Development Tools</h3>
+      <p>
+        ChatGPT, Claude Code,
+        AI-Assisted Development,
+        Prompt Engineering
+      </p>
+    </div>
+
   </div>
 </section>
 
