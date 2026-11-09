@@ -366,6 +366,26 @@ header nav {
 }
  
     
+.project-screenshot {
+  padding: 0;
+  display: block;
+  height: 200px;
+  overflow: hidden;
+}
+
+.project-screenshot img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+}
+
+.project-screenshot:hover img {
+  opacity: 0.85;
+}
+
+    
   </style>
 </head>
 
@@ -545,9 +565,18 @@ header nav {
 
     <!-- AI-ASSISTED PROJECT -->
     <article class="project-card">
-      <div class="project-image">
-        AI project screenshot coming soon
-      </div>
+      
+<a class="project-image project-screenshot"
+   href="ai-assistant/Screenshot1.png"
+   target="_blank"
+   rel="noopener noreferrer">
+
+  <img src="ai-assistant/Screenshot1.png"
+       alt="AI Bug Report Assistant analyzing a C++ programming error"
+       loading="lazy">
+
+</a>
+
 
       <div class="project-content">
         <p class="project-type">
